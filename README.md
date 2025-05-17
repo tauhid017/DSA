@@ -3,17 +3,18 @@
 Welcome to my Data Structures and Algorithms (DSA) practice repository!  
 This repo contains daily solutions to problems I'm solving while following **[Striver's DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2)**.
 
----
+## 🚀 Goals
 
-## 🔍 About
+- Complete the entire Striver’s DSA Sheet.
+- Build strong coding interview foundations.
+- Maintain consistency and discipline.
 
-- I'm on a mission to strengthen my DSA skills by solving **3 to 5 problems daily**.
-- Problems are primarily from **GeeksforGeeks**, **LeetCode**, and other standard platforms.
-- The code snippets in this repository are **not complete standalone code** – they only contain the core logic or the function body as shown on platforms like GFG and LeetCode.
--You can refer to this repo for the **solutions of particular problems** from Striver's DSA Sheet.
-- This repo helps me track my consistency and progress.
+## 📌 Note
 
----
+> These solutions only include the part of the code visible and editable on platforms like GFG/LeetCode (i.e., function implementation). Full boilerplate or I/O handling is not included unless necessary.
 
+## 🧠 Let's Connect
+
+If you’re also working through Striver’s Sheet, feel free to connect and collaborate!
 
 
