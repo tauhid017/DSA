@@ -1,0 +1,15 @@
+bool checkpaling(char a[]){
+    int n = getL(a);
+    int s = 0;
+    int e = n-1;
+    while(s<e){
+        if(a[s]!=a[e]){
+            return false;
+        }
+        else{
+            s++;
+            e--;
+        }
+    }
+    return true;
+}
