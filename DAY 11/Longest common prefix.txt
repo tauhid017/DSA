@@ -1,0 +1,26 @@
+class Solution {
+public:
+    string longestCommonPrefix(vector<string>& strs) {
+        if (strs.empty()) return "";
+        
+        string base = strs[0];
+        string word = "";
+        string ans = "";
+
+        for (int i = 1; i < strs.size(); i++) {
+            word = strs[i];
+            ans = ""; // reset ans for each comparison
+            for (int j = 0; j <word.size(); j++) {
+                if (base[j] == word[j]) {
+                    ans += base[j];
+                } else {
+                    break;
+                }
+            }
+            base = ans; // update base to the current common prefix
+            if (base == "") return ""; // early exit if no common prefix
+        }
+
+        return base; // return the final common prefix
+    }
+};
