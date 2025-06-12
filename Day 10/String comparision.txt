@@ -1,0 +1,37 @@
+class Solution {
+public:
+    int compress(vector<char>& chars) {
+        int n = chars.size();
+        vector<char> ans;
+
+        for (int i = 0; i < n; i++) {
+            int count = 1;
+
+            // Count duplicates using a normal for loop
+            for (int j = i + 1; j < n; j++) {
+                if (chars[i] == chars[j]) {
+                    count++;
+                    i++;
+                } else {
+                    break;
+                }
+            }
+
+            ans.push_back(chars[i]); // push the character
+
+            if (count > 1) {
+                string cnt = to_string(count);
+                for (int k = 0; k < cnt.size(); k++) {
+                    ans.push_back(cnt[k]); // push each digit of count
+                }
+            }
+        }
+
+        // Copy compressed result back to original vector
+        for (int i = 0; i < ans.size(); i++) {
+            chars[i] = ans[i];
+        }
+
+        return ans.size();
+    }
+};
